@@ -1,6 +1,6 @@
 // src/pages/index.js
 import Head from 'next/head';
-import React, { useState, useEffect } from 'react';
+import React, {useState} from 'react';
 import Navbar from '../components/Navbar';
 import styles from '../styles/Home.module.css';
 
