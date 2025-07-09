@@ -1,5 +1,5 @@
 // src/components/MapComponent.js
-import React, { useEffect, useRef } from 'react';
+import React, {useEffect} from 'react';
 import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css'; // Import CSS Leaflet
 import L from 'leaflet'; // Import Leaflet library
