@@ -1,0 +1,41 @@
+/* src/styles/Home.module.css */
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Memastikan container setidaknya setinggi viewport */
+}
+
+.main {
+  flex-grow: 1; /* Memungkinkan main area mengambil sisa ruang */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative; /* Penting untuk posisi absolut peta */
+}
+
+.mapWrapper {
+  width: 100%;
+  flex-grow: 1; /* Memungkinkan peta mengambil sisa ruang */
+  position: absolute; /* Peta akan memenuhi area parent yang relatif */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* Sesuaikan margin-top jika navbar tidak menggunakan position fixed */
+  /* margin-top: 60px;  Misalnya, jika navbar Anda setinggi 60px dan tidak fixed */
+}
+
+/* Styling untuk teks placeholder */
+.placeholderText {
+  color: #555;
+  font-size: 1.2em;
+  text-align: center;
+  padding: 20px;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+  margin-top: 20px;
+}
